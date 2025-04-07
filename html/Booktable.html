@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book table</title>
+    <!-- main page css link -->
+    <link rel="stylesheet" href="../css/Booktable.css">
+
+    <!-- favicon link -->
+    <link rel="icon" href="../src/Others/ZaikaLogo.png">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #FBF2CF;">
+    <nav>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="/"><img src="../src/Others/ZaikaLogo.png" alt="Zaika"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="menu-open"></i>
+                <i class="fa-solid fa-xmark" id="menu-close"></i>
+            </label>
+            <div class="navbar-element">
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#" id="shop">Menu <i class="fa-solid fa-caret-down arrow"></i></a>
+                        <ul>
+                            <li><a href="Indian.html">Indian</a></li>
+                            <li><a href="Chinese.html">Chinese</a></li>
+                            <li><a href="Italian.html">Italian</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                            <li><a href="Salads.html">Salads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Viewplace.html">View Place</a></li>
+                    <li><a href="#" id="shop" >Pages <i class="fa-solid fa-caret-down arrow"></i></a>
+                        <ul>
+                            <li><a href="myorders.html">My Orders</a></li>
+                            <li><a href="Aboutus.html">About us </a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="Help&support.html">Help & support</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Booktable.html" class="active">Book Table</a></li>
+                    <li><a href="Contactus.html">CONTACT US</a></li>
+                    <li><a href="Sign-in.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main div for code -->
+       <div class="main-container">
+        <div class="booking-section">
+        <div class="main-div">
+            <div class="meal-session">
+                <h4>SELECT SESSION </h4>
+                <label for="session-select">Select Session:</label>
+                <select id="session-select" name="session" onchange="populateSessionTime()">
+                    <option value="" disabled selected>Select session</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="meal-session">
+                <label for="session-time">Session Time:</label>
+               
+                <select id="session-time" name="session-time">
+                    <option value="" disabled selected>Select Time</option>
+                    <!-- jss -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="seat-arrangement main-div">
+            <div class="form-group">
+                <form>
+                <h4>SELECT TABLE Number</h4>
+              <label for="dropdown">Select Table Number</label>
+              <select id="dropdown">
+                <option value="" disabled selected>Select Table Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dropdownt">Number of tables</label>
+              <select id="dropdownt">
+                <option value="" disabled selected>Number of tables</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </form>
+            </div>
+        </div>
+
+        <div class="main-div">
+            <div class="guest-details">
+                <h4>ENTER GUEST DETAILS </h4>
+                <h3>Name:</h3>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="guest-details">
+                <h3>Phone:</h3>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="guest-details">
+                <h3>Email:</h3>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        </div>
+        <!-- Using button -->
+    <div class="NUB">
+        <button id="book-btn">Book Table</button>
+        <button id="cancle">Cancel</button>
+    </div>
+    <!-- seat -->   
+        <div class="box-container" id="down">
+            <div>
+                <div class="boxes" id="div1">1</div>
+                <div class="boxes" id="div2">2</div>
+                <div class="boxes" id="div3">3</div>
+                <div class="boxes" id="div4">4</div>
+            </div>
+            <div>
+                <div class="boxes" id="div5">5</div>
+                <div class="boxes" id="div6">6</div>
+                <div class="boxes" id="div7">7</div>
+                <div class="boxes" id="div8">8</div>
+            </div>
+          
+        
+        </div>
+      </div>
+    </div>
+    <!-- Footer part -->
+
+    <footer>
+        <div class="content">
+            <div class="top-details">
+                <div class="left-details">
+                    <div class="logo-details">
+                        <a href="#"><img src="../src/Others/ZaikaLogo.png" alt="Footer-logo" class="f-logo" /></a>
+                    </div>
+                    <div class="address">
+                        <p>
+                        <h6>Visit Our restaurant:</h6>
+                        Poisar, Kandivali East, Mumbai 400101.
+                        </p>
+                        <br />
+                        <pre>
+Email : Support@Zaika.com
+Mobile : +91 8591735268
+              </pre>
+                    </div>
+                    <div class="soft">
+                        <a href="#"><img src="../src/Others/app store.svg" alt="App store" /></a>
+                        <a href="#"><img src="../src/Others/play store.svg" alt="Play Store" /></a>
+                    </div>
+                </div>
+                <div class="right-details">
+                    <div class="link-boxes">
+                        <ul class="box">
+                            <h1 class="link_name">Resources</h1>
+                            <li><a href="Booktable.html">Book&nbsp;Table</a></li>
+                            <li><a href="Viewplace.html">View&nbsp;Place</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                        </ul>
+                        <ul class="box">
+                            <h1 class="link_name">Quick&nbsp;Links</h1>
+                            <li><a href="Aboutus.html">About&nbsp;Us</a></li>
+                            <li><a href="Contactus.html">Contact&nbsp;Us</a></li>
+                            <li><a href="Help&support.html">Help&nbsp;&&nbsp;Support</a></li>
+                            <li><a href="myorders.html">My&nbsp;Orders</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-details">
+                <div class="media-icons">
+                    <a href="/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="/"><i class="fab fa-twitter"></i></a>
+                    <a href="/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2023 <a href="/" style="color: #fff;"> Zaika. </a>All
+                    rights
+                    reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
+
+<script src="../js/booktable.js"></script>

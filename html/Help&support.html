@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help and Support</title>
+    <!-- main page css link -->
+    <link rel="stylesheet" href="../css/help&suppot.css">
+
+    <!-- favicon link -->
+    <link rel="icon" href="../src/Others/ZaikaLogo.png">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- bundle.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body style="background-color: #FBF2CF;">
+    <nav>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="/"><img src="../src/Others/ZaikaLogo.png" alt="Zaika"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="menu-open"></i>
+                <i class="fa-solid fa-xmark" id="menu-close"></i>
+            </label>
+            <div class="navbar-element">
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#" id="shop">Menu <i class="fa-solid fa-caret-down arrow"></i></a>
+                        <ul>
+                            <li><a href="Indian.html">Indian</a></li>
+                            <li><a href="Chinese.html">Chinese</a></li>
+                            <li><a href="Italian.html">Italian</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                            <li><a href="Salads.html">Salads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Viewplace.html">View Place</a></li>
+                    <li><a href="#" id="shop" class="active">Pages <i class="fa-solid fa-caret-down arrow"></i></a>
+                        <ul>
+                            <li><a href="myorders.html">My Orders</a></li>
+                            <li><a href="Aboutus.html">About us </a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="Help&support.html">Help & support</a></li>
+                            <!-- <li><a href="traditional.html">Salads</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="Booktable.html">Book Table</a></li>
+                    <li><a href="Contactus.html">CONTACT US</a></li>
+                    <li><a href="Sign-in.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main -->
+    <div class="container-fluid">
+        <div class="small-container">
+            <div class="part-1 row">
+                <div class="card col-sm-5 border-3 p-3 bg-transparent">
+                    <form class="col-main">
+                        <div class="col-row1">
+                            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                        </div>
+                        <br>
+                        <div class="col-row2">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email address"
+                                required>
+                        </div>
+                        <br>
+                        <div class="col-row3">
+                            <input type="number" class="form-control" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <br>
+                        <div class="col-row4">
+                            <input type="text" class="form-control" id="city" placeholder="City" required>
+                        </div>
+                        <br>
+                        <div class="col-row5">
+                            <textarea class="form-control" id="address1" rows="3" placeholder="Write your problem..."
+                                required></textarea>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="sub col-row5 text-c justify-content-center p-1" style="display: flex;">
+                            <button>
+                               Submit
+                            </button>
+
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="col-1"></div>
+                <div class="image col-sm-6">
+                    <img src="..\src\Others\help.png" class="img-fluid">
+                </div>
+            </div>
+            <br><br>
+
+
+            <div class="part-2 col-sm-12">
+                <div class="card w-100 mb-3">
+                    <form>
+                        <div class="card-body d-flex">
+                            <div class="question d-flex">
+                                <br><br>
+                                <h5>Food Quality</h5>
+                                <h5>Overall Quality</h5>
+                                <h5>Speed of Service</h5>
+                                <h5>Price</h5>
+                                <h5>Overall Expericence</h5>
+                            </div>
+
+                            <div class="ratings d-flex">
+                                <div class="Ques">
+                                    <h4>Good</h4>
+                                    <div>
+                                        <input type="radio" id="f1" name="r1" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f2" name="r2" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f3" name="r3" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f4" name="r4" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f5" name="r5" required />
+                                    </div>
+                                </div>
+
+                                <div class="Ques">
+                                    <h4>Excelent</h4>
+                                    <div>
+                                        <input type="radio" id="f1" name="r1" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f2" name="r2" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f3" name="r3" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f4" name="r4" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f5" name="r5" required />
+                                    </div>
+                                </div>
+
+                                <div class="Ques">
+                                    <h4>Outstanding</h4>
+                                    <div>
+                                        <input type="radio" id="f1" name="r1" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f2" name="r2" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f3" name="r3" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f4" name="r4" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f5" name="r5" required />
+                                    </div>
+                                </div>
+                                <div class="Ques">
+                                    <h4>Marvaleous</h4>
+                                    <div>
+                                        <input type="radio" id="f1" name="r1" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f2" name="r2" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f3" name="r3" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f4" name="r4" required />
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="f5" name="r5" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub" style="text-align-last: center;">
+                            <button id="h&pSubmit">Submit</a></button>
+                        </div>
+                        <br>
+                    </form>
+                </div>
+            </div>
+
+            <div class="part-3">
+                <div class="faq card">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Do you offer delivery sevices?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Yes, we offer delivery services within a specified radius from our location. You can
+                                    check if your address is eligible for delivery during the checkout process.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    How can i place an order?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Placing an order is easy! Simply browse our menu, add items to your cart, and
+                                    proceed to the checkout page. Follow the instructions to complete your order.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Are there any vegetarian/vegan options available?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Absolutely! We offer a wide selection of vegetarian and vegan dishes to cater to
+                                    different dietary preferences.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Can i customize my order or make special requests?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Of course! We understand that everyone has unique preferences. You can add special
+                                    requests or customization notes to your order during checkout, and we will do our
+                                    best to accommodate them.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer part -->
+
+    <footer>
+        <div class="content">
+            <div class="top-details">
+                <div class="left-details">
+                    <div class="logo-details">
+                        <a href="#"><img src="../src/Others/ZaikaLogo.png" alt="Footer-logo" class="f-logo" /></a>
+                    </div>
+                    <div class="address">
+                        <p>
+                        <h6>Visit Our restaurant:</h6>
+                        Poisar, Kandivali East, Mumbai 400101.
+                        </p>
+                        <br />
+                        <pre>
+Email : Support@Zaika.com
+Mobile : +91 8591735268
+              </pre>
+                    </div>
+                    <div class="soft">
+                        <a href="#"><img src="../src/Others/app store.svg" alt="App store" /></a>
+                        <a href="#"><img src="../src/Others/play store.svg" alt="Play Store" /></a>
+                    </div>
+                </div>
+                <div class="right-details">
+                    <div class="link-boxes">
+                        <ul class="box">
+                            <h1 class="link_name">Resources</h1>
+                            <li><a href="Booktable.html">Book&nbsp;Table</a></li>
+                            <li><a href="Viewplace.html">View&nbsp;Place</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                        </ul>
+                        <ul class="box">
+                            <h1 class="link_name">Quick&nbsp;Links</h1>
+                            <li><a href="Aboutus.html">About&nbsp;Us</a></li>
+                            <li><a href="Contactus.html">Contact&nbsp;Us</a></li>
+                            <li><a href="Help&support.html">Help&nbsp;&&nbsp;Support</a></li>
+                            <li><a href="myorders.html">My&nbsp;Orders</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-details">
+                <div class="media-icons">
+                    <a href="/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="/"><i class="fab fa-twitter"></i></a>
+                    <a href="/"><i class="fab fa-instagram"></i></a>
+                    <a href="/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2023 <a href="/" style="color: #fff;"> Zaika. </a>All
+                    rights
+                    reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.getElementById("h&pSubmit").addEventListener("Submit",submitF)
+    function submitF(){
+        window.href="Help&support.html"
+    }
+</script>
