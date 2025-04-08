@@ -50,13 +50,6 @@ Password: zaika@123
 
 ---
 
-## 📁 Project File Structure
-
-Zaika/ ├── css/ │ └── style.css # Main styling ├── js/ │ └── script.js # Core JS logic ├── html/ │ └── ... # Additional HTML sections (if separated) ├── src/ │ ├── assets/ # Images, 3D models, sounds │ ├── models/ # 3D restaurant model files │ └── audio/ # Bell sound, etc. ├── chef/ │ ├── pending.html │ ├── ongoing.html │ └── completed.html ├── index.html # Homepage ├── menu.html ├── cart.html ├── payment.html ├── viewplace.html ├── myorders.html ├── booktable.html ├── gallery.html └── help.html
-
-
----
-
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
@@ -87,10 +80,11 @@ Zaika/ ├── css/ │ └── style.css # Main styling ├── js/ │ �
 - 📋 Menu with cards
   ![image](https://github.com/user-attachments/assets/46005f60-0750-4142-865c-4d99117410ea)
  
-- 🛒 Cart functionality  
-- 🧍 View Place 3D model  
-- 🎮 Game mode screen  
-- 👨‍🍳 Chef dashboard  
+- 🧍 View Place 3D model
+  ![image](https://github.com/user-attachments/assets/8b1b5488-4d6f-4fb0-9c41-12f77ad85d4c)
+
+- 🎮 Game mode screen
+  ![image](https://github.com/user-attachments/assets/8d9603e1-d36b-4536-8446-d52f0b0f6d42)
 
 ---
 
